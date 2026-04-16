@@ -1,8 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { SearchInput } from '../../components/search-input/search-input';
+import { List } from '../../components/list/list';
 
 @Component({
-  selector: 'app-by-capital-page',
-  imports: [],
+  selector: 'country-by-capital-page',
+  imports: [SearchInput, List],
   templateUrl: './by-capital-page.html',
 })
-export class ByCapitalPage { }
+export class ByCapitalPage {
+  onSearch() {}
+}
